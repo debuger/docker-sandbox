@@ -4,9 +4,11 @@
     </div>
 </template>
 <script>
-    import layout from './components/layout.vue';
+    import layout from './layout.vue';
+    import store from  './store';
     export default {
         name: 'app',
+        store,
         data() {
             return {
                 applets: ['exchange']

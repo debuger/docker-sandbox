@@ -56,10 +56,10 @@ module.exports = {
       }
     ]
   },
-       plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery-slim',
-            request: 'superagent'
-        })
-   ]
-}
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery-slim',
+      request: 'superagent'
+    })
+  ]
+};
