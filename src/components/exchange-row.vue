@@ -10,8 +10,8 @@
 </script>
 <template id="template-row">
     <li class="row justify-content-md-center">
-        <p class="col-4" v-model="ISO">{{ISO}}</p>
-        <p class="col-4" v-model="buy">{{buy}}</p>
-        <p class="col-4" v-model="sell">{{sell}}</p>
+        <p class="col-4" v-model="ISO">{{rate.ISO}}</p>
+        <p class="col-4" v-model="buy">{{rate.buy}}</p>
+        <p class="col-4" v-model="sell">{{rate.sell}}</p>
     </li>
 </template>

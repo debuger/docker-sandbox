@@ -1,21 +1,21 @@
 {
   "BYN" : {
     "BYN": 1,
-    "EUR": 12,
+    "EUR": 223,
     "RUR": 332,
     "USD": 22
   },
   "EUR" : {
-    "RUR": 13,
+    "RUR": 2,
     "EUR": 1,
-    "USD": 332,
-    "BYN": 22
+    "USD": 3,
+    "BYN": 4
   },
   "RUR" : {
     "BYN": 13,
-    "EUR": 21,
-    "RUR": 1,
-    "USD": 22
+    "EUR": 221,
+    "RUR": 12,
+    "USD": 222
   },
   "USD" : {
     "BYN": 13,

@@ -33,6 +33,11 @@ export default new Vuex.Store({
             state.rates = result;
         }
     },
+    getters: {
+        getRates: function (state) {
+            return state.rates;
+        }
+    },
     actions: {
         loadRates: function(context) {
             request.get('/static/data/exchange.json')

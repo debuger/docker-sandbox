@@ -3,30 +3,23 @@
     import ExchangeRow from './exchange-row.vue';
     import request from 'superagent';
     import _ from 'underscore';
-    import store from  './store';
 
     export default {
-//        data() {
-//            return {
-//                startISO: store.state.startISO,
-//                rates: store.state.rates
-//            };
-//        },
         computed: {
             rates() {
-                return store.state.rates;
+                return this.$store.getters.getRates;
             },
             startISO() {
-                return store.state.startISO;
+                return this.$store.state.startISO;
             }
         },
         created: function() {
-//            this.rates = {};
             this.load();
+            setInterval(this.load, 60000);
         },
         methods: {
             load() {
-                store.dispatch('loadRates');
+                this.$store.dispatch('loadRates');
             }
         },
         components: {
